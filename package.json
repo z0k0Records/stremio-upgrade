@@ -17,11 +17,7 @@
 		"build:win:arm64": "npm run dist && electron-builder --win --arm64",
 		"build:win": "npm run dist && electron-builder --win",
 		"build:web": "npm run dist && electron-builder --web",
-		"build:desktop": "npm run build",
-		"build:linux:x64": "npm run dist && electron-builder --linux --x64",
-		"build:linux:arm64": "npm run dist && electron-builder --linux --arm64",
-		"build:mac:x64": "npm run dist && electron-builder --mac --x64",
-		"build:mac:arm64": "npm run dist && electron-builder --mac --arm64"
+		"build:desktop": "npm run build"
 	},
 	"repository": "https://github.com/z0k0Records/stremio-upgrade.git",
 	"publish": {
@@ -95,10 +91,6 @@
 				"owner": "z0k0Records",
 				"repo": "stremio-upgrade"
 			}
-		},
-		"web": {
-			"provider": "electron",
-			"platforms": ["web"]
 		}
 	},
 	"allowScripts": {
