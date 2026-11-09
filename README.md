@@ -1,172 +1,70 @@
-<p align="center">
-	<a href="https://stremio.com/">
-		<img src="https://github.com/z0k0Records/stremio-upgrade/raw/main/images/icon.ico" alt="Stremio Enhanced Icon">
-	</a>
-	<h1 align="center">Stremio Enhanced</h1>
-	<h5 align="center">This is a community project and is <b>NOT</b> affiliated with Stremio in any way.</h5>
-	<p align="center">
-		<a href="https://github.com/z0k0Records/stremio-upgrade/releases/latest">
-			<img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/z0k0Records/stremio-upgrade/total?style=for-the-badge&color=%237B5BF5">
-		</a>
-		<a href="https://github.com/z0k0Records/stremio-upgrade/stargazers">
-			<img src="https://img.shields.io/github/stars/z0k0Records/stremio-upgrade.svg?style=for-the-badge&color=%237B5BF5" alt="stargazers">
-		</a>
-		<a href="https://github.com/z0k0Records/stremio-upgrade/releases/latest">
-			<img src="https://img.shields.io/github/v/release/z0k0Records/stremio-upgrade?label=Latest%20Release&style=for-the-badge&color=%237B5BF5" alt="Latest Version">
-		</a>
-		<br>
-		<a href="https://nodejs.org/">
-			<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
-		</a>
-		<a href="https://www.typescriptlang.org/">
-			<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-		</a>
-		<a href="https://www.electronjs.org/">
-			<img src="https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white" alt="Electron">
-		</a>
-		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-			<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-		</a>
-		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-			<img src="https://img.shields.io/badge/CSS-2965F1?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
-		</a>
-	</p>
-</p>
+# Stremio Enhanced
 
-## 📌 Table of Contents
-- [📌 Table of Contents](#-table-of-contents)
-- [❓ What is Stremio Enhanced?](#-what-is-stremio-enhanced)
-	- [🛠 How It Works](#-how-it-works)
-	- [✨ Features](#-features)
-- [📥 Downloads](#-downloads)
-- [⚙️ Build From Source](#️-build-from-source)
-- [🎨 Themes and Plugins](#-themes-and-plugins)
-	- [🖌️ Installing Themes](#️-installing-themes)
-	- [🛠️ Installing Plugins](#️-installing-plugins)
-	- [🌐 Community Plugins \& Themes](#-community-plugins--themes)
-- [❓ What Is the Difference Between Plugins and Addons?](#-what-is-the-difference-between-plugins-and-addons)
-- [🛠️ Creating your own theme/plugin](#️-creating-your-own-themeplugin)
-- [🐛 Known Issues](#-known-issues)
-- [📃 Todo List](#-todo-list)
-- [🔗 Discord Server](#-discord-server)
-- [⭐ Support the Project](#-support-the-project)
-- [📊 Repository Stats](#-repository-stats)
-- [🚨 Important Notice](#-important-notice)
+An enhanced Stremio client with plugins and themes support.
 
-## ❓ What is Stremio Enhanced?
+## Features
 
-Stremio Enhanced is an Electron-based [Stremio](https://www.stremio.com/) desktop client with support for plugins and themes. It enhances the default Stremio experience by adding more customization options and integrations.  
+- Enhanced navigation and user interface
+- Plugin system for extended functionality
+- Theme support for customization
+- Cross-platform support (Linux, Windows, macOS, Web)
 
-If you are interested in this project, check out my forks of [stremio-linux-shell](https://github.com/z0k0Records/stremio-linux-shell) and [stremio-shell-ng](https://github.com/z0k0Records/stremio-shell-ng).
+## Installation
 
-### 🛠 How It Works  
-- It runs the Stremio streaming server automatically in the background.
-- It loads [the web version of Stremio](https://web.stremio.com) within an Electron environment.
+### Linux (Arch/Fedora)
 
-### ✨ Features  
-- **Themes** – Customize the look and feel of Stremio with different themes to match your style.  
-  - Example: **Modern Glass Theme** – A modern glass-like aesthetic theme
-	![modernglasstheme](./images/modernglass_preview.png)
-	*(This community-made theme by Fxy6969 and can be found in [Stremio-Glass-Theme](https://github.com/Fxy6969/Stremio-Glass-Theme))*
-
-- **Plugins** – Extend Stremio’s functionality with JavaScript plugins for more features.
-  - Example: **AniSkip Integration** – A plugin to integrate [AniSkip](https://github.com/aniskip) to autoskip anime openings and endings.
-   ![aniskip](./images/aniskipplugin.png)
-   *(This plugin is still under testing but can be found in [stremio-aniskip](https://github.com/REVENGE977/stremio-aniskip).)*
-
-- **Built-in Toggleable Discord Rich Presence** – Show what you're watching on Discord with an easy-to-toggle Rich Presence feature.  
-  ![discordpresence](./images/discordrichpresence.png)   
-
-
-## 📥 Downloads
-You can download the latest version from [the releases tab](https://github.com/z0k0Records/stremio-upgrade/releases). 
-
-If you're on **Windows**, you can also install via winget:
-```
-winget install z0k0Records.StremioEnhanced
+**Arch Linux:**
+```bash
+bash arch-setup.sh
 ```
 
-You can also install Stremio Service (which is required for Stremio Enhanced to stream content) via winget:
+**Fedora:**
+```bash
+bash fedora-setup.sh
 ```
-winget install Stremio.StremioService
+
+### Web
+
+```bash
+npm run build:web
+# Build output will be in release-builds/web/
 ```
 
-## ⚙️ Build From Source
-1. Clone the repository: `git clone https://github.com/z0k0Records/stremio-upgrade.git`
-2. Navigate to the project directory: `cd stremio-upgrade`
-3. Install dependencies: `npm install`
-4. Build the project with electron-builder: 
-    - For Windows: `npm run build:win`
-    - For Linux (x64): `npm run build:linux:x64`
-    - For Linux (arm64): `npm run build:linux:arm64`
-    - For macOS (x86): `npm run build:mac:x64`
-    - For macOS (arm64): `npm run build:mac:arm64`
+### Desktop
 
-## 🎨 Themes and Plugins
+**Linux:**
+```bash
+npm run build:linux:x64
+# Build output: release-builds/linux-unpacked/Stremio Enhanced-*.AppImage
+```
 
-### 🖌️ Installing Themes
-1. Go to the settings and scroll down.
-2. Click on the "OPEN THEMES FOLDER" button.
-3. Move your theme into the opened folder.
-4. Restart Stremio Enhanced.
-5. You should see your theme in the settings with an option to apply it.
+**Windows:**
+```bash
+npm run build:win
+# Build output: release-builds/win-x64/
+```
 
-### 🛠️ Installing Plugins
-1. Go to the settings and scroll down.
-2. Click on the "OPEN PLUGINS FOLDER" button.
-3. Move your plugin into the opened folder.
-4. Restart Stremio Enhanced or reload using <kbd>Ctrl</kbd> + <kbd>R</kbd>
-5. You should see your plugin in the settings with an option to enable it.
+**macOS:**
+```bash
+npm run build:mac
+# Build output: release-builds/mac-x64/
+```
 
-![settings_screenshot](https://github.com/z0k0Records/stremio-upgrade/raw/main/images/settings_screenshot.png)
+## Requirements
 
-### 🌐 Community Plugins & Themes
-You can also use the new community tab.
+- Node.js 20+
+- npm 9+
+- Electron 45+ (for desktop builds)
+- Linux-specific: appimagela (Arch) or appimagela (Fedora)
 
-1. Go to the settings and scroll down.
-2. Click on "Community Plugins & Themes"
-3. Here you can see and download the available submitted community-made themes and plugins.
+## Contributing
 
-![community_tab](./images/communitytab.png)
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-These plugins and themes are fetched from the [Stremio Enhanced Registry](https://github.com/z0k0Records/stremio-enhanced-registry) repository. If you're a developer you can submit your work there.
+## License
 
-## ❓ What Is the Difference Between Plugins and Addons?
-- **Addons** are available on the normal version of Stremio. They add catalogs and streams for Stremio.
-- **Plugins** add more functionality to Stremio, like new features.
-
-## 🛠️ Creating your own theme/plugin
-[You can read the wiki for information on how to create your own plugin/theme and how to submit it to the marketplace](https://github.com/z0k0Records/stremio-upgrade/wiki)
-
-## 🐛 Known Issues
-- Due to browser limitations, Blu-ray PGS embedded subtitles don't load. The only way to get around this is to play streams via external players such as VLC or MPV.
-- On macOS, you'll need to bypass Gatekeeper to run the app. This is because the app is not signed.
-- For more detailed bug reports, please visit the [Issues tab](https://github.com/z0k0Records/stremio-upgrade/issues) of this repository.
-
-## 📃 Todo List
-You can find the current list of tasks and planned features in the [todo.md](./todo.md) file.
-You can suggest ideas and give feature requests by either creating a feature request issue or by contacting me in my Discord server below.
-
-## 🔗 Discord Server
-You can contact me on my Discord server to discuss anything related to my projects, whether it'd be features you'd like to see in this project or to share ideas for themes/plugins you'd like to see made.
-
-[![Discord Server](https://dcbadge.limes.pink/api/server/https://discord.gg/jDsgcehrp7?theme=default-inverted&style=for-the-badge)](https://discord.gg/jDsgcehrp7)
-
-
-## ⭐ Support the Project
-Consider giving the project a ⭐ star on GitHub! Your support helps more people discover it and keeps me motivated to improve it.
-
-If you'd like to go the extra mile, you can also support me by sponsoring the project. Every contribution, big or small, is truly appreciated!
-
-[![Sponsor Me](https://img.shields.io/badge/Sponsor%20Me-%E2%9D%A4-red?style=for-the-badge)](https://github.com/sponsors/z0k0Records)
-
-## 📊 Repository Stats
-
-![Repo Stats](https://repobeats.axiom.co/api/embed/PLACEHOLDER.svg "Repobeats analytics image")
-
-## 🚨 Important Notice
-**This project is not affiliated in any way with Stremio.**
-
-- **This project** is licensed under the MIT License.
-
-<p align="center">💻 Developed with ❤️ by <a href="https://github.com/z0k0Records">z0k0Records</a> | 📜 Licensed under MIT</p>
+MIT
