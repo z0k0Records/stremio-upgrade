@@ -15,7 +15,13 @@
 		"build:mac:arm64": "npm run dist && electron-builder --mac --arm64",
 		"build:win:x64": "npm run dist && electron-builder --win --x64",
 		"build:win:arm64": "npm run dist && electron-builder --win --arm64",
-		"build:win": "npm run dist && electron-builder --win"
+		"build:win": "npm run dist && electron-builder --win",
+		"build:web": "npm run dist && electron-builder --web",
+		"build:desktop": "npm run build",
+		"build:linux:x64": "npm run dist && electron-builder --linux --x64",
+		"build:linux:arm64": "npm run dist && electron-builder --linux --arm64",
+		"build:mac:x64": "npm run dist && electron-builder --mac --x64",
+		"build:mac:arm64": "npm run dist && electron-builder --mac --arm64"
 	},
 	"repository": "https://github.com/z0k0Records/stremio-upgrade.git",
 	"publish": {
@@ -51,7 +57,7 @@
 		"index.html"
 	],
 	"build": {
-		"appId": "com.revenge977.stremio-enhanced",
+		"appId": "com.z0k0records.stremio-enhanced",
 		"productName": "Stremio Enhanced",
 		"asar": true,
 		"icon": "images/icon",
@@ -83,7 +89,16 @@
 		},
 		"linux": {
 			"target": "AppImage",
-			"icon": "images/icon.png"
+			"icon": "images/icon.png",
+			"publish": {
+				"provider": "github",
+				"owner": "z0k0Records",
+				"repo": "stremio-upgrade"
+			}
+		},
+		"web": {
+			"provider": "electron",
+			"platforms": ["web"]
 		}
 	},
 	"allowScripts": {
