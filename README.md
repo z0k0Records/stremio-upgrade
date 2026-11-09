@@ -20,9 +20,28 @@ An enhanced Stremio client with plugins and themes support.
 
 ---
 
-## 📥 Installation
+## 📥 Download & Installation
 
-### 🖥️ Desktop (Linux)
+### 📥 Download Latest Release
+
+**Desktop (Linux x64):**
+- [Download AppImage](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.AppImage)
+
+**Desktop (Linux arm64):**
+- [Download AppImage](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0-arm64.AppImage)
+
+**Desktop (Windows x64):**
+- [Download MSI](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.msi)
+
+**Desktop (macOS x64):**
+- [Download DMG](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.dmg)
+
+**Web Version:**
+- [Download HTML](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/web-version.html)
+
+---
+
+## 📥 Installation
 
 #### Option 1: Download AppImage directly
 
@@ -97,7 +116,7 @@ Simply open [https://web.stremio.com/](https://web.stremio.com/) in your browser
 
 **Option 2: Standalone Web Version**
 
-Open `web-version.html` directly in your browser. Provides a standalone web experience.
+Open [web-version.html](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/web-version.html) directly in your browser. Provides a standalone web experience.
 
 **Option 3: Build locally**
 
@@ -109,13 +128,13 @@ npm run build:web
 
 ## 📦 Available Builds
 
-| File | Size | Platform | Description |
-|------|------|----------|-------------|
-| `release-builds/Stremio Enhanced-1.2.0.AppImage` | 126 MB | Linux x64 | Ready to run |
-| `release-builds/Stremio Enhanced-1.2.0-arm64.AppImage` | 127 MB | Linux arm64 | ARM compatible |
-| `release-builds/win-x64/` | N/A | Windows x64 | Build locally |
-| `release-builds/mac-x64/` | N/A | macOS x64 | Build locally |
-| `web-version.html` | 4.2 KB | Web | Standalone HTML |
+| File | Size | Platform | Description | Download |
+|------|------|----------|-------------|----------|
+| `Stremio Enhanced-1.2.0.AppImage` | 126 MB | Linux x64 | Ready to run | [Download](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.AppImage) |
+| `Stremio Enhanced-1.2.0-arm64.AppImage` | 127 MB | Linux arm64 | ARM compatible | [Download](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0-arm64.AppImage) |
+| `Stremio Enhanced-1.2.0.msi` | N/A | Windows x64 | Installer | [Download](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.msi) |
+| `Stremio Enhanced-1.2.0.dmg` | N/A | macOS x64 | DMG | [Download](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.dmg) |
+| `web-version.html` | 4.2 KB | Web | Standalone HTML | [Download](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/web-version.html) |
 
 ---
 
