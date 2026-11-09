@@ -25,19 +25,23 @@ An enhanced Stremio client with plugins and themes support.
 ### 📥 Download Latest Release
 
 **Desktop (Linux x64):**
-- [Download AppImage](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.AppImage)
+- [Download AppImage (126 MB)](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.AppImage)
+- **Direct Download:** [Stremio Enhanced-1.2.0.AppImage](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.AppImage)
 
 **Desktop (Linux arm64):**
-- [Download AppImage](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0-arm64.AppImage)
+- [Download AppImage (127 MB)](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0-arm64.AppImage)
+- **Direct Download:** [Stremio Enhanced-1.2.0-arm64.AppImage](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0-arm64.AppImage)
 
 **Desktop (Windows x64):**
-- [Download MSI](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.msi)
+- **Direct Download:** [Stremio Enhanced-1.2.0.msi](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.msi)
 
 **Desktop (macOS x64):**
-- [Download DMG](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.dmg)
+- **Direct Download:** [Stremio Enhanced-1.2.0.dmg](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.dmg)
 
 **Web Version:**
-- [Download HTML](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/web-version.html)
+- **Direct Download:** [web-version.html](https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/web-version.html)
+
+> **Note:** If you don't see releases yet, download the AppImage directly using the script below or use the installation scripts below.
 
 ---
 
@@ -167,6 +171,44 @@ cp addon-file.addon chrome://extensions/
 ```
 
 The addons folder is located at: `~/.local/share/StremioEnhanced/addons/`
+
+---
+
+## 📥 Direct Download
+
+**Linux (AppImage):**
+```bash
+# Download and install (x64)
+curl -LO https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0.AppImage
+chmod +x Stremio\ Enhanced-1.2.0.AppImage
+./Stremio\ Enhanced-1.2.0.AppImage
+
+# Or download (arm64)
+curl -LO https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/Stremio%20Enhanced-1.2.0-arm64.AppImage
+chmod +x Stremio\ Enhanced-1.2.0-arm64.AppImage
+./Stremio\ Enhanced-1.2.0-arm64.AppImage
+```
+
+**Web Version:**
+```bash
+# Download the standalone HTML file
+curl -LO https://github.com/z0k0Records/stremio-upgrade/releases/latest/download/web-version.html
+# Open web-version.html in your browser
+```
+
+**Windows:**
+```bash
+# Build locally or download MSI
+npm run build:win
+# Or download: Stremio Enhanced-1.2.0.msi
+```
+
+**macOS:**
+```bash
+# Build locally or download DMG
+npm run build:mac
+# Or download: Stremio Enhanced-1.2.0.dmg
+```
 
 ---
 
